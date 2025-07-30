@@ -1,15 +1,22 @@
 🩺 Indian Liver Disease Predictor
 📘 Project Overview
-This project aims to predict liver disease in Indian patients using various biochemical and demographic features. Using machine learning algorithms such as XGBoost, LightGBM, CatBoost, and Random Forest, we evaluate which model performs best in classifying liver disease presence.
+This project aims to predict liver disease in Indian patients using various biochemical and demographic features.
+I trained multiple machine learning models including:
 
-The final model, LightGBM, achieved an accuracy of 85%, making it the best performer on our dataset.
+XGBoost
+
+LightGBM
+
+CatBoost
+
+Random Forest
+
+✅ LightGBM emerged as the best performer with an accuracy of 85%.
 
 📊 Dataset
-We used the publicly available Indian Liver Patient Dataset (ILPD) from the UCI Machine Learning Repository.
+I used the Indian Liver Patient Dataset (ILPD) from the UCI Machine Learning Repository.
 
-🔗 Download Dataset
-Features include:
-
+🧬 Features:
 Age
 
 Gender
@@ -28,20 +35,25 @@ Total Proteins
 
 Albumin
 
-A/G Ratio
-... and the target: Liver Disease (1 = positive, 0 = negative)
+Albumin and Globulin Ratio
 
-⚙️ Data Preprocessing and Exploration
-Loaded and cleaned missing/null values (particularly in the Albumin and A/G Ratio columns).
+🎯 Target:
+1 → Liver Disease present
+0 → No Liver Disease
 
-Encoded categorical features (Gender) using binary encoding.
+⚙️ Data Preprocessing & Exploration
+Handled missing/null values (Albumin & A/G Ratio)
 
-Normalized numerical features where appropriate.
+Encoded categorical data (Gender)
 
-Performed correlation analysis and basic EDA using matplotlib and seaborn.
+Normalized continuous variables
 
-🤖 Model Training and Evaluation
-We trained and tested four popular classification models:
+Performed correlation analysis, distribution plots, and feature importance
+
+Removed the outliers
+
+🤖 Model Training & Evaluation
+We trained and evaluated the following models:
 
 Model	Accuracy
 Random Forest	82%
@@ -50,57 +62,69 @@ CatBoost	83%
 LightGBM	85%
 
 ✅ Why LightGBM?
-LightGBM was chosen due to:
+Highest test accuracy
 
-The highest test accuracy (85%)
+Fast training time
 
-Fast training time and lower memory usage
+Lower memory usage
 
-Better generalization (less overfitting)
+Less overfitting → Better generalization
 
-Each model was trained on an 80-20 train-test split and evaluated using:
+📏 Evaluation Metrics Used:
 
 Accuracy
 
-Confusion matrix
+Precision, Recall, F1-score
 
-Precision, Recall, and F1-score
+Confusion Matrix
 
-🧠 Model Saving
-The best-performing model (LightGBM) was serialized and saved as:
+💾 Model Saving
+The best-performing model (LightGBM) was saved using joblib:
 
 bash
 Copy
 Edit
 model/liver_disease_lgbm.pkl
-We used joblib for efficient model serialization.
-
 🚀 Deployment
-The application is deployed using Streamlit and hosted on Hugging Face Spaces.
+Built with Streamlit
 
-Users can enter patient data through a simple web form and receive predictions in real-time.
+Hosted on Hugging Face Spaces
 
-🖥️ Tech Stack
-Language: Python
+Users can enter patient data via web form and get instant predictions
+
+🔗 Live Demo:
+👉 https://huggingface.co/spaces/BaburauKrishna/Indian-Liver-Patient
+
+🛠️ Tech Stack
+Language: Python 🐍
 
 Framework: Streamlit
 
 Deployment: Hugging Face Spaces
 
-ML Libraries: LightGBM, XGBoost, CatBoost, scikit-learn, pandas
+ML Libraries:
+LightGBM, XGBoost, CatBoost, scikit-learn, pandas, matplotlib, seaborn
 
 🧪 How to Run Locally
 bash
 Copy
 Edit
-# Clone the repo
+# Clone the repository
 git clone https://github.com/KrishnaPodu/indian-liver-predictor.git
 cd indian-liver-predictor
 
-# Install dependencies
+# Install required packages
 pip install -r requirements.txt
 
-# Run the app
+# Launch the Streamlit app
 streamlit run app.py
-🌐 Live Demo
-https://huggingface.co/spaces/BaburauKrishna/Indian-Liver-Patient
+🙌 Acknowledgements
+Dataset: UCI ML Repository
+
+Libraries: scikit-learn, LightGBM, XGBoost, CatBoost, pandas, matplotlib, seaborn
+
+UI Framework: Streamlit
+
+
+
+
