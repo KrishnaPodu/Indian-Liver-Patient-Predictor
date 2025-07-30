@@ -3,7 +3,7 @@
 
 
 
-📘 Project Overview
+# 📘 Project Overview
 This project aims to predict liver disease in Indian patients using various biochemical and demographic features.
 I trained multiple machine learning models including:
 
@@ -24,7 +24,7 @@ I used the Indian Liver Patient Dataset (ILPD) from the UCI Machine Learning Rep
 
 
 
-🧬 Features:
+ # 🧬 Features:
 Age
 Gender
 Total Bilirubin
@@ -57,7 +57,7 @@ Removed the outliers
 
 
 
-🤖 Model Training & Evaluation
+# 🤖 Model Training & Evaluation
 We trained and evaluated the following models:
 
 Model	Accuracy
