@@ -21,7 +21,7 @@ st.sidebar.title("About This App")
 st.sidebar.markdown("""
 This tool uses an AI model trained on ILPD to detect the likelihood of **liver disease**.  
 🔬 Designed for educational & diagnostic support.  
-🧠 Powered by XGBoost + Streamlit.  
+🧠 Powered by LightBGM + Streamlit.  
 """)
 
 # Header
