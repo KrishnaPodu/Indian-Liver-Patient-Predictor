@@ -1,9 +1,5 @@
-<<<<<<< HEAD
  🩺 Indian Liver Disease Predictor
-=======
-🩺 Indian Liver Disease Predictor
 
->>>>>>> d8dbfc6f197bdfcb45c441d52bc4da2f1970f538
 
 
 
@@ -49,10 +45,6 @@ Albumin and Globulin Ratio
 
 
 
-<<<<<<< HEAD
-=======
-
->>>>>>> d8dbfc6f197bdfcb45c441d52bc4da2f1970f538
 ⚙️ Data Preprocessing & Exploration
 
 Handled missing/null values (Albumin & A/G Ratio)
@@ -94,11 +86,8 @@ Confusion Matrix
 
 
 
-<<<<<<< HEAD
-=======
 
 
->>>>>>> d8dbfc6f197bdfcb45c441d52bc4da2f1970f538
 💾 Model Saving
 The best-performing model (LightGBM) was saved using joblib:
 
@@ -117,10 +106,7 @@ Users can enter patient data via web form and get instant predictions
 
 
 
-<<<<<<< HEAD
 
-=======
->>>>>>> d8dbfc6f197bdfcb45c441d52bc4da2f1970f538
 🔗 Live Demo:
 👉 https://huggingface.co/spaces/BaburauKrishna/Indian-Liver-Patient
 
@@ -155,10 +141,7 @@ cd indian-liver-predictor
 pip install -r requirements.txt
 
 
-<<<<<<< HEAD
-=======
 
->>>>>>> d8dbfc6f197bdfcb45c441d52bc4da2f1970f538
 # Launch the Streamlit app
 streamlit run app.py
 🙌 Acknowledgements
