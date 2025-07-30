@@ -4,8 +4,7 @@ from PIL import Image
 import joblib
 
 # Load model
-classifier = joblib.load("model/liver_disease_lgbm.pkl")
-
+classifier = joblib.load("Deployment_Liver_Disease/model/liver_disease_lgbm.pkl")
 # Prediction function
 def predict_liver_disease(age, gender, total_bilirubin, direct_bilirubin,alk_phosphate, alamine_aminotransferase,
                           aspartate_aminotransferase, total_proteins, albumin, albumin_globulin_ratio):
