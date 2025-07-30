@@ -1,14 +1,13 @@
 🩺 Indian Liver Disease Predictor
+
+
 📘 Project Overview
 This project aims to predict liver disease in Indian patients using various biochemical and demographic features.
 I trained multiple machine learning models including:
 
 XGBoost
-
 LightGBM
-
 CatBoost
-
 Random Forest
 
 ✅ LightGBM emerged as the best performer with an accuracy of 85%.
@@ -18,9 +17,7 @@ I used the Indian Liver Patient Dataset (ILPD) from the UCI Machine Learning Rep
 
 🧬 Features:
 Age
-
 Gender
-
 Total Bilirubin
 
 Direct Bilirubin
