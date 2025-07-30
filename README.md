@@ -37,7 +37,6 @@ Albumin
 Albumin and Globulin Ratio
 
 
-
 🎯 Target:
 1 → Liver Disease present
 0 → No Liver Disease
@@ -45,7 +44,7 @@ Albumin and Globulin Ratio
 
 
 
-⚙️ Data Preprocessing & Exploration
+# ⚙️ Data Preprocessing & Exploration
 
 Handled missing/null values (Albumin & A/G Ratio)
 Encoded categorical data (Gender)
@@ -88,7 +87,7 @@ Confusion Matrix
 
 
 
-💾 Model Saving
+# 💾 Model Saving
 The best-performing model (LightGBM) was saved using joblib:
 
 bash
@@ -98,7 +97,7 @@ model/liver_disease_lgbm.pkl
 
 
 
-🚀 Deployment
+# 🚀 Deployment
 
 Built with Streamlit
 Hosted on Hugging Face Spaces
@@ -113,7 +112,7 @@ Users can enter patient data via web form and get instant predictions
 
 
 
-🛠️ Tech Stack
+# 🛠️ Tech Stack
 
 Language: Python 🐍
 Framework: Streamlit
